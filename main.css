@@ -112,6 +112,16 @@ textarea{
   border-radius: 0.25rem;
   cursor: pointer;
 }
+@media screen and (max-width:460px) {
+  .main{
+    padding: 0;
+  }
+  #survey-form{
+    width: 100vw;
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width:900px) {
   #survey-form{
     width: 50vw;
