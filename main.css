@@ -116,6 +116,9 @@ textarea{
   .main{
     padding: 0;
   }
+  header{
+    padding:1rem;
+  }
   #survey-form{
     width: 100vw;
     margin-bottom: 0;
