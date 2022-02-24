@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <main class="main">
+        <header>
+            <h1 id="title">Progomid survey form</h1>
+            <p id="description">thank you for taking your time to improve us</p>
+        </header>
+        <form action="" id="survey-form">
+                <!-- Name -->
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="enter your name" required> 
+
+            <!-- email -->
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="enter your email" required>
+
+            <!-- Number -->
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" name="age" id="number" min="10" max="99" placeholder="enter age">
+
+               
+            <!-- Option -->
+            <p>What describes your current role?</p>
+            <select name="" id="dropdown">
+                <option disabled selected value>Select a role</option>
+                <option value="">student</option>
+                <option value="">graduate</option>
+                <option value="">full-time worker</option>
+                <option value="">half-time worker</option>
+            </select>
+
+            <!-- radio buttons -->
+            <p>Will you recommend progomid labs to a friend?</p>
+            <input type="radio" value="Definitely" name="reco"  class="radio">Definitely
+            <input type="radio" value="Maybe" name="reco"  class="radio">Maybe
+            <input type="radio" value="Not sure" name="reco" class="radio">Not sure
+            
+            
+            
+            <!-- feature -->
+
+            <p>What is your favorite feature?</p>
+            <select name="" id="dropdown">
+                <option disabled selected value>Select an option </option>
+                <option value="">Project</option>
+                <option value="">Challenges</option>
+                <option value="">Assignment</option>
+                <option value="">Community</option>
+            </select>
+
+            <!-- Improvement -->
+            <p>What will you like to see improved? <small>(check all that apply)</small></p>
+            <input type="checkbox" name="improve" id="" value="video" class="checkbox">Video
+            <input type="checkbox" name="improve" id="" value="backend" class="checkbox">Backend
+            <input type="checkbox" name="improve" id="" value="frontend" class="checkbox">Frontend
+            <input type="checkbox" name="improve" id="" value="wiki" class="checkbox">Wiki
+            <input type="checkbox" name="improve" id="" value="courses" class="checkbox">Courses
+            
+            <!-- Text area -->
+            <p>Any comments or suggestions?</p>
+            <textarea name="" id="" placeholder="Enter your comment here..."></textarea>
+            <input type="submit" id="submit" value="Submit">
+
+            
+
+        </form>
+    </main>
+    <footer class="footer">
+        <p>
+            &copy; <span id="date">2022</span> Built by <span class="me">Progomid</span>
+        </p>
+    </footer>
+</body>
+</html>
